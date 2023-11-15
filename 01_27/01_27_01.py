@@ -1,10 +1,8 @@
-mi, ma = 1000, -1000
+count = 0
 while True:
-    n = int(input())
-    if n == 0:
+    nota = input('Введите ноту ')
+    if nota == 'END':
         break
-    if n < mi:
-        mi = n
-    if n > ma:
-        ma = n
-print('min =', mi, '\nmax =', ma)
+    elif nota[0] == 'C':
+        count += 1
+print(count)
